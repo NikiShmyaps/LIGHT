@@ -1,3 +1,9 @@
+@mixin img-size($w, $h)
+	min-width: $w
+	max-width: $w
+	min-height: $h
+	max-height: $h
+
 *
 	margin: 0
 	padding: 0
@@ -7,18 +13,22 @@ body
 	color: #000000
 
 .container
-	width: 1270px
-	margin: 0 auto
+	flex: 0 0 100%
+	max-width: 100%
+	padding-right: 48px
+	padding-left: 48px
 
-@media (max-width: 1200px)
+@media (max-width: 992px )
 	.container
-		width: 960px
-@media (max-width: 991px)
+		padding-right: 35px
+		padding-left: 35px
+
+@media (max-width: 768px )
 	.container
-		width: 720px
-@media (max-width: 767px)
+		padding-right: 32px
+		padding-left: 32px
+
+@media (max-width: 576px)
 	.container
-		width: 704px
-@media (max-width: 575px)
-	.container
-		width: 310px
+		padding-right: 24px
+		padding-left: 24px
