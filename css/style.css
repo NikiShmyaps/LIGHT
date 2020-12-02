@@ -1,4 +1,165 @@
+@font-face {
+  font-family: 'HelveticaNeueRoman';
+  src: url("../fonts/HelveticaNeue/HelveticaNeueRoman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueBold';
+  src: url("../fonts/HelveticaNeue/HelveticaNeueBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SpaceGroteskMedium';
+  src: url("../fonts/SpaceGrotesk/SpaceGrotesk-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SpaceGroteskRegular';
+  src: url("../fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: black;
+  color: #000000;
+}
+
+.container {
+  width: 1270px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 704px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 310px;
+  }
+}
+
+.people {
+  padding: 96px 0;
+}
+
+.people-title {
+  display: inline-block;
+  font-size: 72px;
+  font-family: 'SpaceGroteskMedium';
+  background: #1519FF;
+  text-transform: uppercase;
+  padding: 20px 10px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.people-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.people-list__item {
+  display: flex;
+  width: 49%;
+}
+
+.people-list__item:first-child {
+  margin-bottom: 32px;
+}
+
+.people-list__item:first-child .people-list__img {
+  border-radius: 150px 0px 0px 0px;
+}
+
+.people-list__item:nth-child(2) {
+  margin-bottom: 32px;
+}
+
+.people-list__item:nth-child(2) .people-list__img {
+  border-radius: 50%;
+}
+
+.people-list__item:nth-child(3) .people-info {
+  padding-left: 0;
+  padding-right: 32px;
+}
+
+.people-list__item:last-child .people-info {
+  padding-left: 0;
+  padding-right: 32px;
+}
+
+.people-list__item:last-child .people-list__img {
+  border-radius: 0 150px 0 0;
+}
+
+.people-list__img {
+  min-width: 294px;
+  min-height: 294px;
+  overflow: hidden;
+}
+
+.people-info {
+  border-top: 1px solid #00000030;
+  padding-left: 32px;
+}
+
+.people-info__title {
+  font-family: 'SpaceGroteskMedium';
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 25px 0 15px;
+}
+
+.people-info__subtitle {
+  font-family: 'HelveticaNeueRoman';
+  font-size: 16px;
+  color: #676767;
+  padding-bottom: 35px;
+}
+
+.people-info__time {
+  font-family: 'HelveticaNeueBold';
+  font-size: 16px;
+  padding-bottom: 25px;
+}
+
+.people-info__description {
+  font-family: 'HelveticaNeueRoman';
+  font-size: 16px;
+  line-height: 27px;
+  color: #676767;
 }
 /*# sourceMappingURL=style.css.map */
